@@ -5,6 +5,6 @@ public class PhoneBook {
         return 0;
     }
     public String findByNumber(){
-        return null;
+        return "Hi";
     }
 }
