@@ -8,13 +8,14 @@ public class PhoneBookTest {
     PhoneBook phoneBook = new PhoneBook();
     @Test
     public void testAdd() {
-        int result = phoneBook.add();
-        assertEquals(0, result);
+        int result = phoneBook.add("Вася", "89221234567");
+        assertEquals(1, result);
     }
 
     @Test
     void findByNumber() {
-        String result = phoneBook.findByNumber();
-        assertEquals("Hi", result);
+        phoneBook.add("Вася", "1");
+        String result = phoneBook.findByNumber("1");
+        assertEquals("Вася", result);
     }
 }
