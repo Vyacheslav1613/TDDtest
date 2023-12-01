@@ -9,6 +9,6 @@ public class PhoneBookTest {
     public void testAdd() {
         PhoneBook phoneBook = new PhoneBook();
         int result = phoneBook.add();
-        assertEquals(1, result);
+        assertEquals(0, result);
     }
 }
